@@ -1,0 +1,15 @@
+type Query {
+  helloworld: String
+  getBCProducts: IGetBCProducts
+}
+
+type IGetBCProduct {
+  name: String
+  id: Int
+  sale_price: Float
+}
+
+type IGetBCProducts {
+  items: [IGetBCProduct]
+  total: Int
+}

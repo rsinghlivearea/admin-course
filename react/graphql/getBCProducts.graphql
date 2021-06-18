@@ -1,0 +1,10 @@
+query getBCProducts {
+  getBCProducts @context(provider: "livearea.admin-sandbox"){
+    items {
+      name
+      id
+      sale_price
+    }
+    total
+  }
+}
